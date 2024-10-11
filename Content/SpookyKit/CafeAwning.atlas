@@ -1,0 +1,15 @@
+SpookyKit.CafeAwningUp
+loc 0 0 30 41
+piv 16 32
+
+SpookyKit.CafeAwningDown
+loc 0 41 30 41
+piv 14 81
+
+SpookyKit.CafeAwningRight
+loc 0 82 30 41
+piv 16 122
+
+SpookyKit.CafeAwningLeft
+loc 0 123 30 41
+piv 14 155

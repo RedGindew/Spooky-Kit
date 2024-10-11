@@ -1,0 +1,32 @@
+
+SpookyKit.MarketCounterDown
+loc 0 0 48 32
+piv 24 24
+
+SpookyKit.MarketCounterRight
+loc 0 32 48 32
+piv 24 56
+
+SpookyKit.MarketCounterLeft
+loc 0 64 48 32
+piv 24 88
+
+SpookyKit.MarketCounterUp
+loc 0 96 48 32
+piv 24 120
+
+SpookyKit.MarketCounterCornerDown
+loc 0 128 48 32
+piv 24 152
+
+SpookyKit.MarketCounterCornerRight
+loc 0 160 48 32
+piv 24 184
+
+SpookyKit.MarketCounterCornerLeft
+loc 0 192 48 32
+piv 24 216
+
+SpookyKit.MarketCounterCornerUp
+loc 0 224 48 32
+piv 24 248

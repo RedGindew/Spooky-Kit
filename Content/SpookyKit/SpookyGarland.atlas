@@ -1,0 +1,12 @@
+SpookyKit.SpookyGarlandRight
+loc 0 0 16 48
+piv 15 47
+SpookyKit.SpookyGarlandLeft
+loc 0 0 16 48
+piv 0 40
+SpookyKit.SpookyGarlandDown
+loc 0 48 16 48
+piv 0 95
+SpookyKit.SpookyGarlandUp
+loc 0 48 16 48
+piv 15 88

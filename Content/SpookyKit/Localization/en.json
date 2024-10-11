@@ -1,0 +1,20 @@
+{
+    "BuildMode": {
+        "SpookyKit.BasicDiningTable": "Painted Dining Table",
+        "SpookyKit.PackOPumpkins": "Pack O' Pumpkins",
+        "SpookyKit.Cobwebs": "Creepy Cobwebs",
+        "SpookyKit.SpookyGarland": "Spooky Garland",
+        "SpookyKit.FallLeaves": "Fallen Leaves",
+        "SpookyKit.SmallPumpkin": "Small Pumpkin",
+        "SpookyKit.SmallShroom": "Small Shroom",
+        "SpookyKit.MangledRoots": "Mangled Roots",
+        "SpookyKit.CafeAwning": "Cafe Awning",
+        "SpookyKit.MarketCounter": "Market Stall Counter",
+        "SpookyKit.BatBookcase": "Spooky Bookshelf",
+        "SpookyKit.Barrel": "Sturdy Barrel",
+        "SpookyKit.CrookedTree": "Crooked Tree",
+        "SpookyKit.Grave0": "Cracked Gravestone",
+        "SpookyKit.OldOak": "Ye Olde Oak",
+        "SpookyKit.StackBarrels": "Stack O' Barrels"
+    }
+}

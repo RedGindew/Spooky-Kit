@@ -1,0 +1,15 @@
+SpookyKit.BatBookcaseUp
+loc 0 16 34 48
+piv 17 54
+
+SpookyKit.BatBookcaseDown
+loc 0 80 34 48
+piv 17 118
+
+SpookyKit.BatBookcaseLeft
+loc 0 144 34 48
+piv 17 182
+
+SpookyKit.BatBookcaseRight
+loc 0 208 34 48
+piv 17 246
