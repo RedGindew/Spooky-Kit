@@ -34,7 +34,7 @@ public class SpookyKit : Mod
     public override string Name => "Spooky Kit";
     public override string Description => "Celebrate the Spooky Season! - v1.2";
     public override string IssueTrackerUrl => "https://x.com/RedGindew";
-    public override string TestedVersionRange => "[0.43.11]";
+    public override string TestedVersionRange => "[0.44.1]";
     private Dictionary<Point, TextureRegion> uiTextures;
     public override TextureRegion Icon => this.uiTextures[new Point(0, 0)];
 
@@ -54,8 +54,8 @@ public class SpookyKit : Mod
             Icon = this.Icon,
             // Sets it's catagory in the Build Menu
             Tab = (FurnitureTool.Tab.DiningRoom),
-            // Set's the colours available and then it's defaults
-            Colors = new ColorSettings(ColorScheme.SimpleWood, ColorScheme.MutedPastels) { Defaults = new int[] { 1, 16 } },
+            // Lists the Colours used and any settings such as their default color
+            Colors = new ColorSettings(ColorScheme.SimpleWood, ColorScheme.MutedPastels) { Defaults = new int[] { 1, 16 }, PreviewName = "SpookyKit.BasicDiningTable" },
             // Creates points on the object for clutter
             // TableSlots adds chair slots by default
             // New Point means the number of tiles it uses.
@@ -71,7 +71,7 @@ public class SpookyKit : Mod
         {
             Icon = this.Icon,
             Tab = (FurnitureTool.Tab.Outside),
-            Colors = new ColorSettings(ColorScheme.MutedPastels, ColorScheme.MutedPastels, ColorScheme.MutedPastels, ColorScheme.Plants){ Defaults = new int[] { 6, 5, 7, 1 } },
+            Colors = new ColorSettings(ColorScheme.MutedPastels, ColorScheme.MutedPastels, ColorScheme.MutedPastels, ColorScheme.Plants){ Defaults = new int[] { 6, 5, 7, 1 }, PreviewName = "SpookyKit.PackOPumpkins" },
         });
         FurnitureType.Register(new FurnitureType.TypeSettings("SpookyKit.FallLeaves", new Point(1, 1), ObjectCategory.SmallObject, 20, new ColorScheme[] { ColorScheme.Plants })
         {
@@ -83,21 +83,21 @@ public class SpookyKit : Mod
         {
             Icon = this.Icon,
             Tab = (FurnitureTool.Tab.Decoration),
-            Colors = new ColorSettings(ColorScheme.Grays){Defaults = new int[] { 0 }},
+            Colors = new ColorSettings(ColorScheme.Grays){Defaults = new int[] { 0 } },
             DefaultRotation = MLEM.Maths.Direction2.Right
         });
         FurnitureType.Register(new FurnitureType.TypeSettings("SpookyKit.SpookyGarland", new Point(1, 1), ObjectCategory.WallHanging | ObjectCategory.NonColliding, 50, new ColorScheme[] { ColorScheme.White, ColorScheme.MutedPastels, ColorScheme.MutedPastels, ColorScheme.MutedPastels })
         {
             Icon = this.Icon,
             Tab = (FurnitureTool.Tab.Decoration),
-            Colors = new ColorSettings(ColorScheme.White, ColorScheme.MutedPastels, ColorScheme.MutedPastels, ColorScheme.MutedPastels){Defaults = new int[] { 0, 6, 16, 8 }},
+            Colors = new ColorSettings(ColorScheme.White, ColorScheme.MutedPastels, ColorScheme.MutedPastels, ColorScheme.MutedPastels){Defaults = new int[] { 0, 6, 16, 8 }, PreviewName = "SpookyKit.SpookyGarland" },
             DefaultRotation = MLEM.Maths.Direction2.Right
         });
                 FurnitureType.Register(new FurnitureType.TypeSettings("SpookyKit.SmallShroom", new Point(1, 1), ObjectCategory.SmallObject | ObjectCategory.NonColliding, 50, new ColorScheme[] { ColorScheme.MutedPastels, ColorScheme.MutedPastels, ColorScheme.White })
         {
             Icon = this.Icon,
             Tab = (FurnitureTool.Tab.Outside),
-            Colors = new ColorSettings(ColorScheme.MutedPastels, ColorScheme.MutedPastels, ColorScheme.White){ Defaults = new int[] { 3, 15, 0 } },
+            Colors = new ColorSettings(ColorScheme.MutedPastels, ColorScheme.MutedPastels, ColorScheme.White){ Defaults = new int[] { 3, 15, 0 }, PreviewName = "SpookyKit.SmallShroom" },
         });
         FurnitureType.Register(new FurnitureType.TypeSettings("SpookyKit.MangledRoots", new Point(1, 1), ObjectCategory.SmallObject | ObjectCategory.NonColliding, 50, new ColorScheme[] { ColorScheme.SimpleWood })
         {
@@ -110,7 +110,7 @@ public class SpookyKit : Mod
             Icon = this.Icon,
             Tab = (FurnitureTool.Tab.Kitchen),
             DefaultRotation = MLEM.Maths.Direction2.Right,
-            Colors = new ColorSettings(ColorScheme.SimpleWood, ColorScheme.SimpleWood){Defaults = new int[] { 1, 2 }},
+            Colors = new ColorSettings(ColorScheme.SimpleWood, ColorScheme.SimpleWood){Defaults = new int[] { 1, 2 }, PreviewName = "SpookyKit.MarketCounter" },
             ConstructedType = typeof(CornerFurniture.Counter),
             ObjectSpots = ObjectSpot.CounterSpots(false).ToArray()
         });
@@ -118,47 +118,125 @@ public class SpookyKit : Mod
         {
             Icon = this.Icon,
             Tab = (FurnitureTool.Tab.Decoration),
-            Colors = new ColorSettings(ColorScheme.MutedPastels, ColorScheme.MutedPastels){Defaults = new int[] { 14, 12 }},
+            Colors = new ColorSettings(ColorScheme.MutedPastels, ColorScheme.MutedPastels){Defaults = new int[] { 14, 12 }, PreviewName = "SpookyKit.CafeAwning" },
             DefaultRotation = MLEM.Maths.Direction2.Right
         });
         FurnitureType.Register(new FurnitureType.TypeSettings("SpookyKit.Barrel", new Point(1, 1), ObjectCategory.SmallObject, 50, new ColorScheme[] { ColorScheme.SimpleWood, ColorScheme.Grays } )
         {
             Icon = this.Icon,
             Tab = (FurnitureTool.Tab.Outside),
-            Colors = new ColorSettings(ColorScheme.SimpleWood, ColorScheme.Grays){ Defaults = new int[] { 1, 1 } },
+            Colors = new ColorSettings(ColorScheme.SimpleWood, ColorScheme.Grays){ Defaults = new int[] { 1, 1 }, PreviewName = "SpookyKit.Barrel" },
         });
         FurnitureType.Register(new FurnitureType.TypeSettings("SpookyKit.StackBarrels", new Point(1, 1), ObjectCategory.SmallObject, 50, new ColorScheme[] { ColorScheme.SimpleWood, ColorScheme.Grays } )
         {
             Icon = this.Icon,
             Tab = (FurnitureTool.Tab.Outside),
-            Colors = new ColorSettings(ColorScheme.SimpleWood, ColorScheme.Grays){ Defaults = new int[] { 1, 1 } },
+            Colors = new ColorSettings(ColorScheme.SimpleWood, ColorScheme.Grays){ Defaults = new int[] { 1, 1 }, PreviewName = "SpookyKit.StackBarrels" },
         });
         FurnitureType.Register(new FurnitureType.TypeSettings("SpookyKit.BatBookcase", new Point(1, 1), ObjectCategory.Bookshelf, 50, new ColorScheme[] { ColorScheme.SimpleWood, ColorScheme.Grays })
         {
             Icon = this.Icon,
             Tab = (FurnitureTool.Tab.Office),
-            Colors = new ColorSettings(ColorScheme.SimpleWood, ColorScheme.Grays){ Defaults = new int[] { 7, 1 } },
+            Colors = new ColorSettings(ColorScheme.SimpleWood, ColorScheme.Grays){ Defaults = new int[] { 7, 1 }, PreviewName = "SpookyKit.BatBookcase" },
             DefaultRotation = MLEM.Maths.Direction2.Right,
         });
         FurnitureType.Register(new FurnitureType.TypeSettings("SpookyKit.CrookedTree", new Point(1, 1), ObjectCategory.SmallObject, 50, new ColorScheme[] { ColorScheme.SimpleWood, ColorScheme.Plants })
         {
             Icon = this.Icon,
             Tab = (FurnitureTool.Tab.Outside),
-            Colors = new ColorSettings(new ColorScheme[] { ColorScheme.SimpleWood, ColorScheme.Plants }){ Defaults = new int[] { 2, 2 } },
+            Colors = new ColorSettings(new ColorScheme[] { ColorScheme.SimpleWood, ColorScheme.Plants }){ Defaults = new int[] { 2, 2 }, PreviewName = "SpookyKit.CrookedTree" },
             DefaultRotation = MLEM.Maths.Direction2.Up,
         });
         FurnitureType.Register(new FurnitureType.TypeSettings("SpookyKit.OldOak", new Point(1, 1), ObjectCategory.SmallObject, 50, new ColorScheme[] { ColorScheme.SimpleWood, ColorScheme.Plants })
         {
             Icon = this.Icon,
             Tab = (FurnitureTool.Tab.Outside),
-            Colors = new ColorSettings(new ColorScheme[] { ColorScheme.SimpleWood, ColorScheme.Plants }){ Defaults = new int[] { 2, 2 } },
+            Colors = new ColorSettings(new ColorScheme[] { ColorScheme.SimpleWood, ColorScheme.Plants }){ Defaults = new int[] { 2, 2 }, PreviewName = "SpookyKit.OldOak" },
             DefaultRotation = MLEM.Maths.Direction2.Up,
         });
-        FurnitureType.Register(new FurnitureType.TypeSettings("SpookyKit.Grave0", new Point(1, 1), ObjectCategory.SmallObject, 50, new ColorScheme[] { ColorScheme.Grays })
+/*         FurnitureType.Register(new FurnitureType.TypeSettings("SpookyKit.Grave0", new Point(1, 1), ObjectCategory.SmallObject, 50, new ColorScheme[] { ColorScheme.Grays })
         {
             Icon = this.Icon,
             Tab = (FurnitureTool.Tab.Decoration),
             Colors = new ColorSettings(ColorScheme.Grays){ Defaults = new int[] { 0 } },
+        }); */
+            FurnitureType.Register(new FurnitureType.TypeSettings("SpookyKit.Grave0", new Point(1, 1), ObjectCategory.Lamp, 50, new ColorScheme[] { ColorScheme.Grays })
+        {
+            Icon = this.Icon,
+            Tab = (FurnitureTool.Tab.Lighting),
+            Colors = new ColorSettings(ColorScheme.Grays){ Defaults = new int[] { 0 } },
+        });
+            FurnitureType.Register(new FurnitureType.TypeSettings("SpookyKit.Candlestick", new Point(1, 1), ObjectCategory.Lamp | ObjectCategory.SmallObject, 50, new ColorScheme[] { ColorScheme.White })
+        {
+            Icon = this.Icon,
+            Tab = (FurnitureTool.Tab.Lighting),
+            Colors = new ColorSettings(ColorScheme.White){ Defaults = new int[] { 0 } },
+            LightSettings = new LightFurniture.Settings
+            {
+                CreateLights = f => [
+                    new Light(f.Map, f.Position, f.Floor, Light.CircleTexture, new Vector2(6, 8), new Color(255, 181, 112)) {
+                        VisualWorldOffset = new Vector2(0.5F),
+                        Scale = 0.5f,
+                    }
+                ],
+                IsAutomatic = false,
+                IsElectrical = true,
+                Flickers = true
+            }
+        });
+        // -------------------------------------------- Standard Roof
+
+                FurnitureType.Register(new FurnitureType.TypeSettings("SpookyKit.Roof", new Point(1, 1), ObjectCategory.SmallObject, 50, new ColorScheme[] { ColorScheme.Grays })
+        {
+            Icon = this.Icon,
+            Tab = (FurnitureTool.Tab.Outside),
+            Colors = new ColorSettings(new ColorScheme[] { ColorScheme.Grays }){ Defaults = new int[] { 0 }, PreviewName = "SpookyKit.Roof" },
+            DefaultRotation = MLEM.Maths.Direction2.Up,
+        });
+        FurnitureType.Register(new FurnitureType.TypeSettings("SpookyKit.RoofCorner", new Point(1, 1), ObjectCategory.SmallObject, 50, new ColorScheme[] { ColorScheme.Grays, ColorScheme.ColoredMetal })
+        {
+            Icon = this.Icon,
+            Tab = (FurnitureTool.Tab.Outside),
+            Colors = new ColorSettings(new ColorScheme[] { ColorScheme.Grays, ColorScheme.ColoredMetal }){ Defaults = new int[] { 0, 0 }, PreviewName = "SpookyKit.RoofCorner" },
+            DefaultRotation = MLEM.Maths.Direction2.Up,
+        });
+        FurnitureType.Register(new FurnitureType.TypeSettings("SpookyKit.RoofCap", new Point(1, 1), ObjectCategory.SmallObject, 50, new ColorScheme[] { ColorScheme.Grays, ColorScheme.ColoredMetal })
+        {
+            Icon = this.Icon,
+            Tab = (FurnitureTool.Tab.Outside),
+            Colors = new ColorSettings(new ColorScheme[] { ColorScheme.Grays, ColorScheme.ColoredMetal }){ Defaults = new int[] { 0, 0 }, PreviewName = "SpookyKit.RoofCap" },
+            DefaultRotation = MLEM.Maths.Direction2.Up,
+        });
+        FurnitureType.Register(new FurnitureType.TypeSettings("SpookyKit.RoofInner", new Point(1, 1), ObjectCategory.SmallObject, 50, new ColorScheme[] { ColorScheme.Grays, ColorScheme.ColoredMetal })
+        {
+            Icon = this.Icon,
+            Tab = (FurnitureTool.Tab.Outside),
+            Colors = new ColorSettings(new ColorScheme[] { ColorScheme.Grays, ColorScheme.ColoredMetal }){ Defaults = new int[] { 0, 0 }, PreviewName = "SpookyKit.RoofInner" },
+            DefaultRotation = MLEM.Maths.Direction2.Up,
+        });
+
+        // -------------------------------------------- Tiled Roof
+
+                FurnitureType.Register(new FurnitureType.TypeSettings("SpookyKit.TiledRoof", new Point(1, 1), ObjectCategory.SmallObject, 50, new ColorScheme[] { ColorScheme.Grays })
+        {
+            Icon = this.Icon,
+            Tab = (FurnitureTool.Tab.Outside),
+            Colors = new ColorSettings(new ColorScheme[] { ColorScheme.Grays }){ Defaults = new int[] { 0 }, PreviewName = "SpookyKit.TiledRoof" },
+            DefaultRotation = MLEM.Maths.Direction2.Up,
+        });
+        FurnitureType.Register(new FurnitureType.TypeSettings("SpookyKit.TiledRoofCorner", new Point(1, 1), ObjectCategory.SmallObject, 50, new ColorScheme[] { ColorScheme.Grays, ColorScheme.ColoredMetal })
+        {
+            Icon = this.Icon,
+            Tab = (FurnitureTool.Tab.Outside),
+            Colors = new ColorSettings(new ColorScheme[] { ColorScheme.Grays, ColorScheme.ColoredMetal }){ Defaults = new int[] { 0, 0 }, PreviewName = "SpookyKit.TiledRoofCorner" },
+            DefaultRotation = MLEM.Maths.Direction2.Up,
+        });
+        FurnitureType.Register(new FurnitureType.TypeSettings("SpookyKit.TiledRoofCap", new Point(1, 1), ObjectCategory.SmallObject, 50, new ColorScheme[] { ColorScheme.Grays, ColorScheme.ColoredMetal })
+        {
+            Icon = this.Icon,
+            Tab = (FurnitureTool.Tab.Outside),
+            Colors = new ColorSettings(new ColorScheme[] { ColorScheme.Grays, ColorScheme.ColoredMetal }){ Defaults = new int[] { 0, 0 }, PreviewName = "SpookyKit.TiledRoofCap" },
+            DefaultRotation = MLEM.Maths.Direction2.Up,
         });
     }
 
@@ -180,5 +258,13 @@ public class SpookyKit : Mod
         yield return "CrookedTree";
         yield return "OldOak";
         yield return "Grave0";
+        yield return "Roof";
+        yield return "RoofCorner";
+        yield return "RoofCap";
+        yield return "RoofInner";
+        yield return "TiledRoof";
+        yield return "TiledRoofCorner";
+        yield return "TiledRoofCap";
+        yield return "Candlestick";
     }
 }

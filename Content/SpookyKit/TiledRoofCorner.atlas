@@ -1,0 +1,15 @@
+SpookyKit.TiledRoofCornerUp
+loc 0 0 34 64
+piv 17 54
+
+SpookyKit.TiledRoofCornerLeft
+loc 0 64 34 64
+piv 17 118
+
+SpookyKit.TiledRoofCornerRight
+loc 0 128 34 64
+piv 17 182
+
+SpookyKit.TiledRoofCornerDown
+loc 0 192 34 64
+piv 17 246

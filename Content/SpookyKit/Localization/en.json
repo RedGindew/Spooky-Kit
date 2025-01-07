@@ -1,20 +1,90 @@
 {
     "BuildMode": {
         "SpookyKit.BasicDiningTable": "Painted Dining Table",
+        "SpookyKit.BasicDiningTableColors0": "Wood",
+        "SpookyKit.BasicDiningTableColors1": "Cloth",
+        
         "SpookyKit.PackOPumpkins": "Pack O' Pumpkins",
+        "SpookyKit.PackOPumpkinsColors0": "Large Pumpkin",
+        "SpookyKit.PackOPumpkinsColors1": "Medium Pumpkin",
+        "SpookyKit.PackOPumpkinsColors2": "Tiny Pumpkin",
+        "SpookyKit.PackOPumpkinsColors3": "Roots",
+
         "SpookyKit.Cobwebs": "Creepy Cobwebs",
+
         "SpookyKit.SpookyGarland": "Spooky Garland",
+        "SpookyKit.SpookyGarlandColors1": "Skull 1",
+        "SpookyKit.SpookyGarlandColors2": "Skull 2",
+        "SpookyKit.SpookyGarlandColors3": "Skull 3",
+
         "SpookyKit.FallLeaves": "Fallen Leaves",
+
         "SpookyKit.SmallPumpkin": "Small Pumpkin",
+
         "SpookyKit.SmallShroom": "Small Shroom",
+        "SpookyKit.SmallShroomColors0": "Head",
+        "SpookyKit.SmallShroomColors1": "Stalk",
+
         "SpookyKit.MangledRoots": "Mangled Roots",
+
         "SpookyKit.CafeAwning": "Cafe Awning",
+        "SpookyKit.CafeAwningColors0": "Base",
+        "SpookyKit.CafeAwningColors1": "Stripe",
+
         "SpookyKit.MarketCounter": "Market Stall Counter",
+        "SpookyKit.MarketCounterColors0": "Stand",
+        "SpookyKit.MarketCounterColors1": "Surface",
+
         "SpookyKit.BatBookcase": "Spooky Bookshelf",
+        "SpookyKit.BatBookcaseColors0": "Wood",
+        "SpookyKit.BatBookcaseColors1": "Bat Statue",
+
         "SpookyKit.Barrel": "Sturdy Barrel",
+        "SpookyKit.BarrelColors0": "Wood",
+        "SpookyKit.BarrelColors1": "Metal Band",
+
         "SpookyKit.CrookedTree": "Crooked Tree",
+        "SpookyKit.CrookedTreeColors0": "Wood",
+        "SpookyKit.CrookedTreeColors1": "Dead Leaves",
+
         "SpookyKit.Grave0": "Cracked Gravestone",
+
         "SpookyKit.OldOak": "Ye Olde Oak",
-        "SpookyKit.StackBarrels": "Stack O' Barrels"
+        "SpookyKit.OldOakColors0": "Wood",
+        "SpookyKit.OldOakColors1": "Dead Leaves",
+
+        "SpookyKit.Roof": "Roof Piece",
+        "SpookyKit.RoofColors0": "Tiles",
+        "SpookyKit.RoofColors1": "Trim",
+
+        "SpookyKit.RoofCorner": "Roof Corner Piece",
+        "SpookyKit.RoofCornerColors0": "Tiles",
+        "SpookyKit.RoofCornerColors1": "Trim",
+
+        "SpookyKit.RoofCap": "Roof Cap Piece",
+        "SpookyKit.RoofCapColors0": "Tiles",
+        "SpookyKit.RoofCapColors1": "Trim",
+
+        "SpookyKit.RoofInner": "Roof Inner Corner Piece",
+        "SpookyKit.RoofInnerColors0": "Tiles",
+        "SpookyKit.RoofInnerColors1": "Trim",
+
+        "SpookyKit.TiledRoof": "Tiled Roof Piece",
+        "SpookyKit.TiledRoofColors0": "Tiles",
+        "SpookyKit.TiledRoofColors1": "Trim",
+
+        "SpookyKit.TiledRoofCorner": "Tiled Roof Corner Piece",
+        "SpookyKit.TiledRoofCornerColors0": "Tiles",
+        "SpookyKit.TiledRoofCornerColors1": "Trim",
+
+        "SpookyKit.TiledRoofCap": "Tiled Roof Cap Piece",
+        "SpookyKit.TiledRoofCapColors0": "Tiles",
+        "SpookyKit.TiledRoofCapColors1": "Trim",
+        
+        "SpookyKit.StackBarrels": "Stack O' Barrels",
+        "SpookyKit.StackBarrelsColors0": "Wood",
+        "SpookyKit.StackBarrelsColors1": "Metal Band",
+
+        "SpookyKit.Candlestick": "The Classic Candlestick"
     }
 }
